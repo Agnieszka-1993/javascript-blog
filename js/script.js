@@ -51,7 +51,17 @@
 
     /* Find all article in page */
 
-    const artcles = document.querySelectorAll('.artcle')
+    const articles = document.querySelectorAll('.artcle');
+
+    /* Iteration through all articles */
+
+    articles.forEach(article => {
+      const articleId = article.getAttribute('id');
+      const titleElement = article.querySelector('.title');
+      const articleTitle = titleElement ? titleElement.innerHTML : 'not title';
+      const linkHTML = `<li><a href="#${articleId}">${articleTitle}</a></li>`;
+      linkList.innerHTML += linkHTML;
+    });
 
   }
 
