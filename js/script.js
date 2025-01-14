@@ -44,6 +44,14 @@
 
     targetArticle.classList.add('active');
 
+    /* remove all links in left column */
+
+    const linkList = document.querySelector('.link-list');
+    linkList.innerHTML = '';
+
+    /* Find all article in page */
+
+    const artcles = document.querySelectorAll('.artcle')
 
   }
 
