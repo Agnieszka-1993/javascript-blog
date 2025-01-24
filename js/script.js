@@ -57,7 +57,7 @@ function generateTitleLinks(customSelector = ''){
   /* for each article */
 
   console.log('Selector:', optArticleSelector);
-  const articles = document.querySelectorAll(optArticleSelector);
+  const articles = document.querySelectorAll(optArticleSelector+customSelector);
   console.log('Articles found:', articles);
 
   let html = '';
@@ -133,7 +133,7 @@ function generateTags(){
 
       /* generate HTML of the link */
 
-      const linkHTML = '<li><a href="#' + articleTags + '"><span>' + tag + '</span></a></li>';
+      const linkHTML = '<li><a href="#tag-' + tag + '"><span>' + tag + '</span></a></li>';
 
       /* add generated code to html variable */
 
@@ -264,7 +264,7 @@ function generateAuthors() {
 
 
     /* generate HTML of the link */
-    const authorHTML = '<li><a href="#' + articleAuthors + '"><span>' + articleAuthors + '</span></a></li>';
+    const authorHTML = '<li><a href="#author-' + articleAuthors + '"><span>' + articleAuthors + '</span></a></li>';
 
 
 
