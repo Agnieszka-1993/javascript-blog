@@ -117,4 +117,23 @@ body {
   p {
     margin: 0 10px 0 0;
   }
+
+}
+.tag-size{
+  display: inline-block;
+  &-1{
+    font-size: 100%;
+  }
+  &-2{
+    font-size: 110%;
+  }
+  &-3{
+    font-size: 130%;
+  }
+  &-4{
+    font-size: 150%;
+  }
+  &-5{
+    font-size: 200%;
+  }
 }
